@@ -1,0 +1,49 @@
+<html>
+
+<!-- 
+http://webdesign.tutsplus.com/tutorials/getting-creative-with-the-google-maps-api--webdesign-13380
+ -->
+
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+
+  <script src="roadtrip.js"></script>
+  <link href="css/roadtrip.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div id="bg_patter-div" class="bg_pattern" ></div>
+<div id="background-div" class="background-image"></div>
+<div id="content" style="display:none">
+
+  <div id="status" style="position:absolute; top:5px; left:5px;"> Please Log in</div>
+  <input id="fb-login-button" type="image" src="images/fb.png" name="saveForm" class="btTxt submit" id="saveForm" style="display: none" onclick="login()"/>
+  <div id="main-id" class="main">
+    <!-- <div id="roadtrip-logo">Road Trip</div> -->
+    <div id="input-container-id" class="input-containter">
+      <input id="pac-input" autocomplete="off" class="input-box" placeholder="Departing From">
+      <input id="pac-input-1" autocomplete="off" class="input-box" placeholder="Going To">
+      <image src="images/submit_button_3.png" name="saveForm" id="saveForm" class="submit-button" onclick="submitAndSearch()"/>
+    </div>
+
+    <!--       <div id="fb-button">
+             <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+            </fb:login-button>
+          </div>  -->
+
+
+  </div>
+</div>
+<div id="map-container" class="map-container">
+  <div id="map-canvas"></div>
+  <div><a id="close-map" class="close-map" id="close-map-link"><img class="close-map" src="images/close-button.png" onclick="closeMap()" href="#top"/></a> </div>
+</div>
+</body>
+
+<!-- Maps Code! -->
+
+</html>
